@@ -17,13 +17,13 @@ spec:
       - name: backend
         image: pritam44/coding-cloud-backend:latest
         imagePullPolicy: Always
-        resources:
-          requests:
-            cpu: "256Mi"
-            memory: "200m"
+      ##  resources:
+      ##    requests:
+      ##      cpu: "256Mi"
+      ##      memory: "200m"
         ports:
         - containerPort: 5000
-        livenesProbe:
+        livenessProbe:
           httpGet:
             path: /health
             port: 5000

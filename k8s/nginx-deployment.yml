@@ -22,10 +22,10 @@ spec:
         - name: nginx-pv-config
           mountpath: /etc/nginx/conf.d/default.conf
           subPath: default.conf
-        resources:
-          requests:
-            cpu: "64Mi"
-            memory: "100m"
+      ##  resources:
+      ##    requests:
+      ##      cpu: "64Mi"
+      ##      memory: "100m"
         livenessProbe:
           httpGet:
             path: /
