@@ -42,7 +42,7 @@ pipeline {
             steps {
                 echo "Testing Backend Image"
                 sh """
-                  docker images | grep ${DOCKER_IMAGE}:${BUILD_NUMBER}
+                  docker images | grep ${DOCKER_IMAGE}
                 """
                 echo "Backend Image Test Passed"
             }

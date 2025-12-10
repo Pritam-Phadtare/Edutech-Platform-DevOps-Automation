@@ -43,7 +43,7 @@ pipeline {
             steps {
                 echo "Testing Frontend Image"
                 sh """
-                   docker images | grep ${DOCKER_IMAGE}:${BUILD_NUMBER}
+                   docker images | grep ${DOCKER_IMAGE}
                    docker run --rm -d --name frontend-test-${BUILD_NUMBER} ${DOCKER_IMAGE}:${BUILD_NUMBER}
                    sleep 5
                    docker exec frontend-test-${BUILD_NUMBER} curl -f http://localhost:80

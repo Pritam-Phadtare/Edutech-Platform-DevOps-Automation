@@ -4,7 +4,7 @@ resource "aws_db_subnet_group" "rds-db-subnet" {
 }
 
 resource "aws_db_instance" "db" {
-    db_name = "codingclouddb"
+    db_name = "enquiry"
     engine = "mysql"
     engine_version = "8.0"
     multi_az = false
