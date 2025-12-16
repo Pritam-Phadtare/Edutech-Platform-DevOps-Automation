@@ -13,6 +13,8 @@ spec:
       labels:
         app: frontend
     spec:
+      imagePullSecrets:
+      - name: docker-secret
       containers:
       - name: frontend
         image: pritam44/coding-cloud-frontend:latest
