@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Checking Out Frontend Code"
                 git branch: "${params.GIT_BRANCH}",
-                  url: 'https://github.com/pritz45/DevOps-Project.git'
+                  url: 'https://github.com/Pritam-Phadtare/Edutech-Platform-DevOps-Automation.git'
                 echo "Checkout Completed"   
             }
         }
